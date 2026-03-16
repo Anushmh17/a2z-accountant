@@ -225,9 +225,9 @@
     }
 
     /* Highlight the current active menu item */
-    .btBelowLogoArea .menuPort ul li.current-menu-item > a,
-    .btBelowLogoArea .menuPort ul li.current-menu-ancestor > a,
-    .btBelowLogoArea .menuPort ul li.current_page_item > a {
+    .btBelowLogoArea .menuPort ul li.current-menu-item>a,
+    .btBelowLogoArea .menuPort ul li.current-menu-ancestor>a,
+    .btBelowLogoArea .menuPort ul li.current_page_item>a {
         background-color: rgba(195, 166, 96, 0.1) !important;
         color: #c3a660 !important;
     }
@@ -240,8 +240,8 @@
     }
 
     /* Hide ALL theme default arrows in mobile menu */
-    .btBelowLogoArea .menuPort nav ul li.menu-item-has-children > a::after,
-    .btBelowLogoArea .menuPort nav ul li.menu-item-has-children > a:after,
+    .btBelowLogoArea .menuPort nav ul li.menu-item-has-children>a::after,
+    .btBelowLogoArea .menuPort nav ul li.menu-item-has-children>a:after,
     .btBelowLogoArea .menuPort nav ul li.menu-item-has-children::after,
     .btBelowLogoArea .menuPort nav ul li.menu-item-has-children:after,
     .subToggler:before,
@@ -942,7 +942,7 @@ li.on>.subToggler:after {
     }
 
     /* The slider wrapper div that wraps the whole slider including dots */
-    .bt_bb_section_with_bottom_coverage_image .bt_bb_content_slider > div,
+    .bt_bb_section_with_bottom_coverage_image .bt_bb_content_slider>div,
     .bt_bb_section_with_bottom_coverage_image .slick-slider {
         padding-bottom: 0 !important;
         margin-bottom: 0 !important;
@@ -1050,6 +1050,24 @@ li.on>.subToggler:after {
     .bt_bb_section_with_bottom_coverage_image .bt_bb_column_inner.bt_bb_hidden_xs,
     .bt_bb_section_with_bottom_coverage_image .bt_bb_column_inner.bt_bb_hidden_ms {
         display: none !important;
+    }
+
+    /* Reduce huge headline size slightly on mobile for better fit */
+    .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 3.2rem !important;
+        line-height: 1.1 !important;
+    }
+
+    @media (max-width: 480px) {
+        .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+            font-size: 2.6rem !important;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+            font-size: 2.2rem !important;
+        }
     }
 
     /* Pull the slider content up to close the remaining gap */
