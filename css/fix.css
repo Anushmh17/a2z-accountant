@@ -1075,3 +1075,129 @@ li.on>.subToggler:after {
         margin-bottom: 0 !important;
     }
 }
+
+/* ============================================================ */
+/* REMOVE A2Z ACCOUNTANT SUPERHEADLINE — ALL SUBPAGES          */
+/* Center-aligns the remaining headline text in hero sections   */
+/* ============================================================ */
+
+/* Hide the "A2Z ACCOUNTANT" superheadline text */
+.bt_bb_section_show_left_boxed_content .bt_bb_headline_superheadline {
+    display: none !important;
+}
+
+/* Hide the decorative dash that appears above the superheadline */
+.bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_dash_top .bt_bb_headline_superheadline:before,
+.bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_superheadline.bt_bb_dash_top>h2:before {
+    display: none !important;
+}
+
+/* Center-align the main headline content (e.g. FINANCIAL CONTROL) */
+.bt_bb_section_show_left_boxed_content .bt_bb_headline {
+    text-align: center !important;
+    margin-top: -30px !important;
+}
+
+.bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_tag {
+    text-align: center !important;
+}
+
+.bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content {
+    display: block !important;
+    text-align: center !important;
+}
+
+/* ── Management Accounts Hero — Mobile Font Size Fix ─────── */
+/* Prevents "MANAGEMENT ACCOUNTS" from overflowing right edge */
+/* Targets ONLY the Management Accounts page hero section     */
+@media (max-width: 991px) {
+    #bt_bb_section69a66ba666587 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 2.4rem !important;
+        line-height: 1.15 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #bt_bb_section69a66ba666587 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 1.9rem !important;
+        line-height: 1.15 !important;
+    }
+}
+
+@media (max-width: 360px) {
+    #bt_bb_section69a66ba666587 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 1.6rem !important;
+        line-height: 1.15 !important;
+    }
+}
+
+/* ── Online Accounting Hero — Mobile Font & Centering Fix ─── */
+/* Font size + center align only. No layout changes.          */
+/* Targets ONLY the Online Accounting page on mobile.         */
+@media (max-width: 991px) {
+
+    /* Match Tax Services/Personal Tax/Annual Accounts spacing */
+    #bt_bb_section69a66bd983112 {
+        padding-top: 80px !important;
+        padding-bottom: 20px !important;
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_headline {
+        text-align: center !important;
+        margin-top: -30px !important; /* Match global subpage pull-up */
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_headline .bt_bb_headline_tag {
+        text-align: center !important;
+    }
+
+    /* Standard responsive font sizes used on reference pages */
+    #bt_bb_section69a66bd983112 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 3.2rem !important;
+        line-height: 1.1 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #bt_bb_section69a66bd983112 {
+        padding-top: 80px !important;
+    }
+    #bt_bb_section69a66bd983112 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 2.6rem !important;
+    }
+}
+
+@media (max-width: 360px) {
+    #bt_bb_section69a66bd983112 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 2.2rem !important;
+    }
+}
+
+/* ── Manufacturing Hero — Mobile Font Size Fix ───────────── */
+/* Prevents "MANUFACTURING" from overflowing right edge      */
+@media (max-width: 991px) {
+    #bt_bb_section69a66d6dbac81 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 2.2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #bt_bb_section69a66d6dbac81 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 360px) {
+    #bt_bb_section69a66d6dbac81 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 1.6rem !important;
+    }
+}
+
+/* ── Manufacturing & Landlords Header Duplication Fix ──────── */
+/* Hides the default breadcrumb/title section on mobile to     */
+/* prevent duplication with the custom hero section.           */
+@media (max-width: 991px) {
+    .btPageHeadline {
+        display: none !important;
+    }
+}
