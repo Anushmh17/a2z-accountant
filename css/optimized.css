@@ -831,3 +831,16 @@ body.btBelowMenu .btContentWrap {
         color: #000 !important;
     }
 }
+
+/* ── Reduce gap between Tax Services and A Decade section on mobile ── */
+@media (max-width: 991px) {
+    #bt_bb_section69a677467f2b0 {
+        padding-top: 20px !important;
+        margin-top: 0 !important;
+    }
+
+    #bt_bb_section69a677467e097 {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
