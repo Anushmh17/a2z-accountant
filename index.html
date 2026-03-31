@@ -14,6 +14,20 @@
         content="A2Z Accountant delivers top-notch professional accounting services with our Qualified Accountant in ilford to both businesses and individuals.">
     <meta name="keywords"
         content="accountant, ilford, chartered accountant, financial services, tax services, accounting services">
+    
+    <!-- Privacy & Performance Pre-connects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="images/wp-content/uploads/2023/11/New-Project-4.png" as="image">
+    
+    <!-- Critical CSS: Prevent Hero Layout Shift -->
+    <style>
+        .slick-slider:not(.slick-initialized) .bt_bb_content_slider_item:first-child { display: block !important; opacity: 1 !important; visibility: visible !important; }
+        .slick-slider:not(.slick-initialized) .bt_bb_content_slider_item:not(:first-child) { display: none !important; }
+        #bt_bb_section69a677467aa7a { min-height: 600px; }
+        .btContentWrap { padding-top: 0 !important; }
+        .btMainLogo { width: 211px; height: 100px; }
+    </style>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="index.html">
@@ -38,29 +52,34 @@
         href="images/wp-content/uploads/2023/11/cropped-Dark-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180"
         href="images/wp-content/uploads/2023/11/cropped-Dark-180x180.png">
-    <!-- Core Theme CSS -->
-    <link rel="stylesheet" href="css/framework-style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fix.css">
-
-    <!-- Page Builder & Sliders -->
-    <link rel="stylesheet" href="css/content_elements.crush.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- Plugins -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Optimized Custom CSS -->
-    <link rel="stylesheet" href="css/optimized.css">
+    <!-- Framework Styles (Asynchronous to eliminate render-blocking) -->
+    <link rel="stylesheet" href="css/framework-style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/framework-style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <link rel="stylesheet" href="css/fix.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/fix.css"></noscript>
+    
+    <!-- Page Builder & Sliders (Asynchronous) -->
+    <link rel="stylesheet" href="css/content_elements.crush.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/slick.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/optimized.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="css/content_elements.crush.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/optimized.css">
+    </noscript>
     <!-- Print -->
     <link rel="stylesheet" href="css/print.css" media="print">
     <!-- Google Fonts -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=PT+Serif:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900&subset=latin,latin-ext&display=swap">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&subset=latin,latin-ext&display=swap">
-    <link rel='stylesheet' id='bt_bb_google_fonts-css'
-        href='https://fonts.googleapis.com/css2?family=PT%20Serif:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&#038;subset=latin,latin-ext&#038;display=swap'
-        type='text/css' media='all' />
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
 
     <script type="application/ld+json">
     {
@@ -95,8 +114,10 @@
                 <div class="logo">
                     <span>
                         <a href="index.html"><img class="btMainLogo" data-hw="2.1098039215686"
+                                width="211" height="100"
                                 src="images/wp-content/uploads/2024/08/A2Z-Accountant_Logo_Final_WEBSITE-1.png"
                                 alt="A2Z Accountant"><img class="btAltLogo"
+                                width="211" height="100"
                                 src="images/wp-content/uploads/2024/08/A2Z-Accountant_Logo_Final_WEBSITE-1.png"
                                 alt="A2Z Accountant"></a>
                     </span>
@@ -113,7 +134,7 @@
                         </div>
                         <div class="logo">
                             <span>
-                                <a href="https://a2zaccountant.co.uk/"><img class="btMainLogo" data-hw="2.1098039215686"
+                                <a href="index.html"><img class="btMainLogo" data-hw="2.1098039215686"
                                         src="images/wp-content/uploads/2024/08/A2Z-Accountant_Logo_Final_WEBSITE-1.png"
                                         alt="A2Z Accountant" width="211" height="100"><img class="btAltLogo"
                                         src="images/wp-content/uploads/2024/08/A2Z-Accountant_Logo_Final_WEBSITE-1.png"
@@ -2799,9 +2820,8 @@
         <footer class="btLightSkin"></footer>
     </div><!-- /btSiteFooter -->
     </div><!-- /pageWrap -->
-    <!-- Core JS -->
+    <!-- Core JS (Deferred) -->
     <script src="js/jquery.min.js" defer></script>
-    <script src="js/jquery-migrate.min.js" defer></script>
     <!-- Page Builder & Sliders -->
     <script src="js/fix.js" defer></script>
     <script src="js/slick.min.js" defer></script>
@@ -2831,47 +2851,9 @@
         /* ]]> */
     </script>
     <!-- Initialize components when DOM is ready -->
-    <script>
-        jQuery(document).ready(function ($) {
-            // Initialize any sliders that need manual initialization
-            if ($.fn.slick) {
-                $('.slick-slider').each(function () {
-                    var $this = $(this);
-                    var settings = $this.data('slick');
-                    if (settings && !$this.hasClass('slick-initialized')) {
-                        $this.slick(settings);
-                    }
-                });
-            }
-            // Initialize fancySelect if available
-            if ($.fn.fancySelect) {
-                $('.fancy-select').fancySelect();
-            }
-            // Handle tabs
-            $('.bt_bb_tabs_header li').on('click', function () {
-                var index = $(this).index();
-                $(this).addClass('on').siblings().removeClass('on');
-                $(this).closest('.bt_bb_tabs').find('.bt_bb_tab_item').eq(index).addClass('on').siblings().removeClass('on');
-            });
-            // Activate first tab by default
-            $('.bt_bb_tabs_header li:first-child').addClass('on');
-            $('.bt_bb_tab_item:first-child').addClass('on');
-            // Handle form submission
-            $('.quote-form').on('submit', function (e) {
-                e.preventDefault();
-                alert('Thank you for your quote request. We will get back to you soon.');
-                // Here you would typically send the form data via AJAX
-                // this.submit(); // Uncomment to actually submit the form
-            });
-            // Initialize counters
-            $('.bt_bb_counter.animate').each(function () {
-                var $this = $(this);
-                var digitLength = $this.data('digit-length') || 3;
-                // Simple counter animation would go here
-            });
-        });
-    </script>
+    <!-- Initialize components via deferred fix.js script -->
     <!-- Tidio Chat Script -->
+    <!-- Tidio Chat Script (Delayed for performance) -->
     <script>
         document.tidioChatCode = "skvasrziyjb4nos1b9iynclm067tib9j";
         (function () {
@@ -2882,13 +2864,9 @@
                 tidioScript.src = "//code.tidio.co/skvasrziyjb4nos1b9iynclm067tib9j.js";
                 document.body.appendChild(tidioScript);
             }
-            if (window.attachEvent) {
-                window.attachEvent("onload", asyncLoad);
-            } else {
-                window.addEventListener("load", asyncLoad, false);
-            }
+            window.addEventListener("load", function() {
+                setTimeout(asyncLoad, 3000); // 3-second delay after full load
+            }, false);
         })();
     </script>
-    <script src="js/fix.js"></script>
-
 </body>
