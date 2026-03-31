@@ -738,9 +738,11 @@ body.btBelowMenu .btContentWrap {
 
     #bt_bb_section69a677467d894 .bt_bb_service,
     #bt_bb_section69a677467e097 .bt_bb_service {
-        display: block !important;
-        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        text-align: left !important;
         width: 100% !important;
+        gap: 20px !important;
     }
 
     /* Total wipe of decorative elements that might cause dots */
@@ -760,11 +762,18 @@ body.btBelowMenu .btContentWrap {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin: 0 auto 20px auto !important;
+        margin: 0 !important;
         float: none !important;
-        width: 125px !important;
-        height: 125px !important;
+        width: 80px !important;
+        height: 80px !important;
+        min-width: 80px !important;
+        max-width: 80px !important;
+        min-height: 80px !important;
+        max-height: 80px !important;
+        flex-shrink: 0 !important;
+        aspect-ratio: 1 / 1 !important;
         border-radius: 50% !important;
+        box-sizing: border-box !important;
         line-height: 1 !important;
         overflow: hidden !important;
         background-color: #000 !important;
@@ -777,20 +786,48 @@ body.btBelowMenu .btContentWrap {
         padding: 0 !important;
         background: transparent !important;
         color: #fff !important;
-        transform: scale(1.5) !important;
+        transform: scale(1) !important;
     }
 
     #bt_bb_section69a677467d894 .bt_bb_service_content,
     #bt_bb_section69a677467e097 .bt_bb_service_content {
         display: block !important;
-        width: 100% !important;
+        flex: 1 !important;
         margin: 0 !important;
         padding: 0 !important;
-        text-align: center !important;
+        text-align: left !important;
     }
 
     #bt_bb_section69a677467d894 .bt_bb_service_content_title,
     #bt_bb_section69a677467e097 .bt_bb_service_content_title {
-        text-align: center !important;
+        text-align: left !important;
+        font-size: 1.5rem !important;
+        font-weight: 900 !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_text,
+    #bt_bb_section69a677467e097 .bt_bb_text {
+        text-align: left !important;
+    }
+
+    /* Button styling for mobile to match "FIND OUT MORE" link style */
+    #bt_bb_section69a677467d894 .bt_bb_button,
+    #bt_bb_section69a677467e097 .bt_bb_button {
+        text-align: left !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_button .bt_bb_link,
+    #bt_bb_section69a677467e097 .bt_bb_button .bt_bb_link {
+        border: none !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        font-weight: 900 !important;
+        font-size: 0.9rem !important;
+        color: #1a1a1a !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_button .bt_bb_button_text,
+    #bt_bb_section69a677467e097 .bt_bb_button .bt_bb_button_text {
+        color: #000 !important;
     }
 }
