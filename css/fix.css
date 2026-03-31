@@ -833,6 +833,16 @@ li.on>.subToggler:after {
         text-transform: uppercase !important;
     }
 
+    /* ── Services Section Gap Fix ──────────────────────────── */
+    /* Remove large gap between the first and second service rows on the homepage */
+    #bt_bb_section69a677467d894 {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a677467e097 {
+        padding-top: 0 !important;
+    }
+
     /* ── Section Spacing ───────────────────────────────────── */
     .bt_bb_section:not(.bt_bb_top_spacing_none) {
         padding-top: 3.5em !important;
