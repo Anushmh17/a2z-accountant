@@ -723,4 +723,74 @@ body.btBelowMenu .btContentWrap {
         margin-top: 14px !important;
         margin-bottom: 25px !important;
     }
+
+    /* ── Service Items One-by-One (Scoped ONLY to Service Sections) ── */
+    #bt_bb_section69a677467d894 .bt_bb_column,
+    #bt_bb_section69a677467e097 .bt_bb_column {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        display: block !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_service,
+    #bt_bb_section69a677467e097 .bt_bb_service {
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Total wipe of decorative elements that might cause dots */
+    #bt_bb_section69a677467d894 .bt_bb_service:before,
+    #bt_bb_section69a677467d894 .bt_bb_service:after,
+    #bt_bb_section69a677467e097 .bt_bb_service:before,
+    #bt_bb_section69a677467e097 .bt_bb_service:after,
+    #bt_bb_section69a677467d894 .bt_bb_icon_holder:after,
+    #bt_bb_section69a677467e097 .bt_bb_icon_holder:after {
+        display: none !important;
+        content: none !important;
+        background: transparent !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_icon_holder,
+    #bt_bb_section69a677467e097 .bt_bb_icon_holder {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto 20px auto !important;
+        float: none !important;
+        width: 125px !important;
+        height: 125px !important;
+        border-radius: 50% !important;
+        line-height: 1 !important;
+        overflow: hidden !important;
+        background-color: #000 !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_icon_holder:before,
+    #bt_bb_section69a677467e097 .bt_bb_icon_holder:before {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        color: #fff !important;
+        transform: scale(1.5) !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_service_content,
+    #bt_bb_section69a677467e097 .bt_bb_service_content {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    #bt_bb_section69a677467d894 .bt_bb_service_content_title,
+    #bt_bb_section69a677467e097 .bt_bb_service_content_title {
+        text-align: center !important;
+    }
 }
