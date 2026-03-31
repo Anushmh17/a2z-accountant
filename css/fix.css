@@ -802,10 +802,11 @@ li.on>.subToggler:after {
         /* Standardized fix for all subpages */
     }
 
-    /* ── About Us Hero: restore proper top gap ───────────────── */
-    /* The About Us hero has .bt_bb_section_show_left_boxed_content which
-       gets over-shortened by the rule above. Override with more padding. */
-    #bt_bb_section69a50e9656a7d {
+    /* ── Subpages Hero: restore proper top gap (About Us & Contact Us) ── */
+    /* These hero sections have .bt_bb_section_show_left_boxed_content which
+       gets over-shortened by the global rule above. Override with more padding. */
+    #bt_bb_section69a50e9656a7d,
+    #bt_bb_section69a65722aec80 {
         padding-top: 105px !important;
     }
 
