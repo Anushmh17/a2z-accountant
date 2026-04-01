@@ -807,7 +807,7 @@ li.on>.subToggler:after {
        gets over-shortened by the global rule above. Override with more padding. */
     #bt_bb_section69a50e9656a7d,
     #bt_bb_section69a65722aec80 {
-        padding-top: 105px !important;
+        padding-top: 130px !important;
     }
 
     /* Remove redundant spacers from Hero sections on phone */
@@ -841,6 +841,7 @@ li.on>.subToggler:after {
 
     #bt_bb_section69a677467e097 {
         padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 
     /* ── Section Spacing ───────────────────────────────────── */
@@ -848,9 +849,6 @@ li.on>.subToggler:after {
         padding-top: 3.5em !important;
     }
 
-    .bt_bb_section:not(.bt_bb_bottom_spacing_none):not(.bt_bb_section_with_bottom_coverage_image) {
-        padding-bottom: 3.5em !important;
-    }
 
     .bt_bb_section.bt_bb_section_with_bottom_coverage_image {
         padding-bottom: 0 !important;
@@ -874,7 +872,7 @@ li.on>.subToggler:after {
         max-width: none !important;
     }
 
-    /* ── Get a Quote Section Centering – Index Page ──────── */
+    /* ── Get a Quote Section Centering & Spacing – Index Page ──────── */
     #bt_bb_section69a677468494c,
     #bt_bb_section69a677468494c .bt_bb_headline {
         text-align: center !important;
@@ -883,10 +881,50 @@ li.on>.subToggler:after {
         box-sizing: border-box !important;
     }
 
-    /* ── About Us Page Specific Paragraph-Image Gap ──────── */
-    /* Add gap between text and image on About Us mobile view */
-    .page-id-1569 .bt_bb_column.bt_bb_padding_double {
-        margin-bottom: 40px !important;
+    #bt_bb_section69a677468494c {
+        padding-top: 2em !important;
+        margin-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a6774684d13 {
+        padding-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* ── Testimonials Section top spacing fix ──────────────── */
+    #bt_bb_section69a6774680f2f {
+        padding-top: 0 !important;
+    }
+
+    /* ── About Us hero: gap between paragraph and image ──────── */
+    #bt_bb_section69a50e9656a7d .bt_bb_column.bt_bb_padding_double {
+        margin-bottom: 55px !important;
+    }
+
+    /* ── Index: reduce gap below headline before paragraph ── */
+    #bt_bb_section69a677467ceb3 .bt_bb_headline {
+        margin-bottom: 1em !important;
+    }
+
+    #bt_bb_section69a677467ceb3 .bt_bb_separator {
+        display: none !important;
+    }
+
+    #bt_bb_section69a677467ceb3 .bt_bb_text {
+        margin-bottom: 55px !important;
+    }
+
+    /* ── Border between services and decade section ────────── */
+    #bt_bb_section69a677467f2b0 {
+        border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+    }
+
+    #bt_bb_section69a677467f2b0 .bt_bb_headline {
+        margin-top: 45px !important;
+    }
+
+    #bt_bb_section69a677467f2b0 .bt_bb_headline {
+        margin-top: 45px !important;
     }
 
     /* ── Mobile Header Background Color Fix ──────────────── */
@@ -1099,30 +1137,32 @@ li.on>.subToggler:after {
 /* Center-aligns the remaining headline text in hero sections   */
 /* ============================================================ */
 
-/* Hide the "Expert Accountants" superheadline text */
-.bt_bb_section_show_left_boxed_content .bt_bb_headline_superheadline {
-    display: none !important;
-}
+/* Hide the "Expert Accountants" superheadline text — mobile only */
+@media (max-width: 991px) {
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline_superheadline {
+        display: none !important;
+    }
 
-/* Hide the decorative dash that appears above the superheadline */
-.bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_dash_top .bt_bb_headline_superheadline:before,
-.bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_superheadline.bt_bb_dash_top>h2:before {
-    display: none !important;
-}
+    /* Hide the decorative dash that appears above the superheadline */
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_dash_top .bt_bb_headline_superheadline:before,
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_superheadline.bt_bb_dash_top>h2:before {
+        display: none !important;
+    }
 
-/* Center-align the main headline content (e.g. FINANCIAL CONTROL) */
-.bt_bb_section_show_left_boxed_content .bt_bb_headline {
-    text-align: center !important;
-    margin-top: -50px !important;
-}
+    /* Center-align the main headline content on mobile */
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline {
+        text-align: center !important;
+        margin-top: -50px !important;
+    }
 
-.bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_tag {
-    text-align: center !important;
-}
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_tag {
+        text-align: center !important;
+    }
 
-.bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content {
-    display: block !important;
-    text-align: center !important;
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content {
+        display: block !important;
+        text-align: center !important;
+    }
 }
 
 /* ── Management Accounts Hero — Mobile Font Size Fix ─────── */
@@ -1219,5 +1259,169 @@ li.on>.subToggler:after {
 @media (max-width: 991px) {
     .btPageHeadline {
         display: none !important;
+    }
+}
+
+/* ============================================================ */
+/* 5. GLOBAL FONT UNIFICATION (Reference from index.html)        */
+/* ============================================================ */
+
+/* Headlines & Titles: Use PT Serif */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bt_bb_headline_tag,
+.bt_bb_headline_content,
+.bt_bb_column_content_title,
+.bt_bb_service_content_title,
+.bt_bb_icon_box_content_title,
+.btIconWidgetTitle,
+.btLogoArea .logo span a,
+.btVerticalMenuHolder nav ul li a,
+.btBelowLogoArea nav ul li a {
+    font-family: 'PT Serif', serif !important;
+}
+
+/* Body Text & Paragraphs: Use Montserrat */
+body,
+.btContentHolder,
+.bt_bb_text,
+p,
+li,
+.wpcf7-form,
+.bt_bb_headline_subheadline,
+.bt_bb_service_content_text {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Restore bold weight for b and strong tags */
+b, strong {
+    font-weight: 700 !important;
+}
+
+/* First Class Consultants subheadline — white text on dark bg */
+#bt_bb_section69a67746836d3 .bt_bb_headline_subheadline {
+    color: #ffffff !important;
+}
+
+/* Footer subheadlines — white text on dark bg */
+.btSiteFooter .bt_bb_headline_subheadline {
+    color: #ffffff !important;
+}
+
+/* Hero slider subheadlines — white text */
+#bt_bb_section69a677467aa7a .bt_bb_headline_subheadline,
+#bt_bb_section69a50e9656a7d .bt_bb_headline_subheadline {
+    color: #ffffff !important;
+}
+
+/* Quote section spacing fix — desktop & mobile */
+#bt_bb_section69a677468494c {
+    padding-top: 2em !important;
+    margin-bottom: 0 !important;
+}
+
+#bt_bb_section69a6774684d13 {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* ============================================================ */
+/* 6. DESKTOP HERO ALIGNMENT & SPACING                           */
+/* ============================================================ */
+
+/* Force standardized padding and min-height for subpage hero sections on desktop */
+@media (min-width: 992px) {
+
+    /* Target ONLY subpage hero sections (not the home page slider) */
+    .bt_bb_section_show_left_boxed_content {
+        padding-top: 180px !important;
+        padding-bottom: 100px !important;
+        min-height: 650px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Ensure the inner port takes full width */
+    .bt_bb_section_show_left_boxed_content .bt_bb_port {
+        width: 100% !important;
+    }
+
+    /* Fix for overlapping headlines in hero — left-aligned on desktop */
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline {
+        margin-top: 0 !important;
+        text-align: left !important;
+    }
+
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_tag,
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content,
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content span {
+        text-align: left !important;
+    }
+
+    /* Restore column content to normal flow on desktop */
+    .bt_bb_section_show_left_boxed_content .bt_bb_column_content {
+        display: block !important;
+        text-align: left !important;
+        align-items: unset !important;
+    }
+}
+
+/* ============================================================ */
+/* 7. MOBILE HERO CENTER ALIGNMENT — SUBPAGES ONLY              */
+/* ============================================================ */
+
+@media (max-width: 991px) {
+
+    /* Force centering for ALL headline components on mobile — subpages only */
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline,
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_tag,
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content,
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_content span {
+        text-align: center !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Force centering for buttons on mobile — subpages only */
+    .bt_bb_section_show_left_boxed_content .bt_bb_button,
+    .bt_bb_section_show_left_boxed_content .bt_bb_button .bt_bb_button_holder {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    /* Force centering for images on mobile — subpages only */
+    .bt_bb_section_show_left_boxed_content .bt_bb_image {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    /* Zero out desktop-only negative margins that cause off-center layout */
+    .bt_bb_section_show_left_boxed_content .bt_bb_image[style*="margin-left: -200px"] {
+        margin-left: 0 !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Ensure column content is centered on phone — subpages only */
+    .bt_bb_section_show_left_boxed_content .bt_bb_column_content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Center the decorative dashes */
+    .bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_dash_top .bt_bb_headline_content:before {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 }
