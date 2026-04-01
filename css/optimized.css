@@ -834,6 +834,18 @@ body.btBelowMenu .btContentWrap {
 
 /* ── Mobile Layout Fixes: Section Boundaries & Gaps ── */
 @media (max-width: 991px) {
+    /* 0. Border between Hero/Intro and Our Services */
+    #bt_bb_section69a677467ceb3 {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a677467d894 {
+        border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
+        padding-top: 60px !important; /* Extra space for the Services text below the line */
+        margin-top: 22px !important; /* Pull line closer to the image above */
+    }
+
     /* 1. Gap between Tax Services (#bt_bb_section69a677467e097) and Decade of Trust (#bt_bb_section69a677467f2b0) */
     #bt_bb_section69a677467e097 {
         padding-bottom: 0 !important;
