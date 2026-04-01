@@ -466,32 +466,32 @@
 
 @font-face {
     font-family: "AnalyticsAndInvestment";
-    src: url("../fonts/AnalyticsAndInvestment.woff") format("woff"), url("https://a2zaccountant.co.uk/wp-content/themes/avantage/fonts/AnalyticsAndInvestment/AnalyticsAndInvestment.woff") format("woff");
+    src: url("../fonts/AnalyticsAndInvestment.woff") format("woff");
 }
 
 @font-face {
     font-family: "BusinessPeople";
-    src: url("../fonts/BusinessPeople.woff") format("woff"), url("https://a2zaccountant.co.uk/wp-content/themes/avantage/fonts/BusinessPeople/BusinessPeople.woff") format("woff");
+    src: url("../fonts/BusinessPeople.woff") format("woff");
 }
 
 @font-face {
     font-family: "Economy";
-    src: url("../fonts/Economy.woff") format("woff"), url("https://a2zaccountant.co.uk/wp-content/themes/avantage/fonts/Economy/Economy.woff") format("woff");
+    src: url("../fonts/Economy.woff") format("woff");
 }
 
 @font-face {
     font-family: "Essential";
-    src: url("../fonts/Essential.woff") format("woff"), url("https://a2zaccountant.co.uk/wp-content/themes/avantage/fonts/Essential/Essential.woff") format("woff");
+    src: url("../fonts/Essential.woff") format("woff");
 }
 
 @font-face {
     font-family: "TaxesAccounting";
-    src: url("../fonts/TaxesAccounting.woff") format("woff"), url("https://a2zaccountant.co.uk/wp-content/themes/avantage/fonts/TaxesAccounting/TaxesAccounting.woff") format("woff");
+    src: url("../fonts/TaxesAccounting.woff") format("woff");
 }
 
 @font-face {
     font-family: "BusinessManagement";
-    src: url("../fonts/BusinessManagement.woff") format("woff"), url("https://a2zaccountant.co.uk/wp-content/themes/avantage/fonts/BusinessManagement/BusinessManagement.woff") format("woff");
+    src: url("../fonts/BusinessManagement.woff") format("woff");
 }
 
 /* Explicit Mapping for Theme Fonts */
@@ -1095,11 +1095,11 @@ li.on>.subToggler:after {
 }
 
 /* ============================================================ */
-/* REMOVE A2Z ACCOUNTANT SUPERHEADLINE — ALL SUBPAGES          */
+/* REMOVE Expert Accountants SUPERHEADLINE — ALL SUBPAGES          */
 /* Center-aligns the remaining headline text in hero sections   */
 /* ============================================================ */
 
-/* Hide the "A2Z ACCOUNTANT" superheadline text */
+/* Hide the "Expert Accountants" superheadline text */
 .bt_bb_section_show_left_boxed_content .bt_bb_headline_superheadline {
     display: none !important;
 }
@@ -1113,7 +1113,7 @@ li.on>.subToggler:after {
 /* Center-align the main headline content (e.g. FINANCIAL CONTROL) */
 .bt_bb_section_show_left_boxed_content .bt_bb_headline {
     text-align: center !important;
-    margin-top: -30px !important;
+    margin-top: -50px !important;
 }
 
 .bt_bb_section_show_left_boxed_content .bt_bb_headline .bt_bb_headline_tag {
@@ -1162,7 +1162,8 @@ li.on>.subToggler:after {
 
     #bt_bb_section69a66bd983112 .bt_bb_headline {
         text-align: center !important;
-        margin-top: -30px !important; /* Match global subpage pull-up */
+        margin-top: -30px !important;
+        /* Match global subpage pull-up */
     }
 
     #bt_bb_section69a66bd983112 .bt_bb_headline .bt_bb_headline_tag {
@@ -1180,6 +1181,7 @@ li.on>.subToggler:after {
     #bt_bb_section69a66bd983112 {
         padding-top: 80px !important;
     }
+
     #bt_bb_section69a66bd983112 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
         font-size: 2.6rem !important;
     }

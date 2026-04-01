@@ -1,41 +1,4 @@
-/* 
-Theme Name: Avantage
-Theme URI: http://avantage.bold-themes.com
-Description: Avantage is a Consulting WordPress Theme perfect for Business, Marketing, Human Resources, Financial, Accountant, Tax Advisor or similar type of business, large or small. Avantage offers custom tailored elements, pixel perfect layouts and awesome look and feel ready to be used for your company or client. It comes with five different demos that you can customize any way you want, with a set of options such as header styles, menu location, custom colors and much, much more. Avantage is is fast, easy to configure and to use, works great with many languages - RTL too - and across devices.
-Version: 2.3.8
-Author: BoldThemes
-Author URI: http://bold-themes.com
-Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
-Text Domain: avantage
-License: GNU General Public License version 3.0 & Envato Regular/Extended License
-License URI:  http://www.gnu.org/licenses/gpl-3.0.html & http://themeforest.net/licenses
-
-All PHP code is released under the GNU General Public Licence version 3.0
-All HTML/CSS/JAVASCRIPT code is released under Envato's Regular/Extended License
-
-[Table of contents]
-
-1. Base
-2. Typography
-3. Bootstrap grid
-4. Bold themes grid 
-5. Template
-6. Header
-7. Footer
-8. Post
-9. Widgets
-10. Elements
-11. Color schemes
-12. Woocommerce
-13. Cost calculator
-14. Floating image
-15. Floating element
-16. Typography etc responsive
-17. Woocommerce screens
-18. Fixes
-19. Gutenberg
-
-*/
+/* Main stylesheet - standalone build */
 /* Fonts */
 /* Template fonts, edit in config.php  */
 /* Base font */
