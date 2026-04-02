@@ -1314,7 +1314,8 @@ li,
 }
 
 /* Restore bold weight for b and strong tags */
-b, strong {
+b,
+strong {
     font-weight: 700 !important;
 }
 
@@ -1439,5 +1440,51 @@ b, strong {
     .bt_bb_section_show_left_boxed_content .bt_bb_headline.bt_bb_dash_top .bt_bb_headline_content:before {
         left: 50% !important;
         transform: translateX(-50%) !important;
+    }
+
+    /* ── Retails Page Mobile Alignment Fix ─────────────────── */
+    /* Forces content sections to stay left-aligned on mobile    */
+    /* Targets the unique section IDs for the Retails page       */
+    #bt_bb_section69a66da9e9ffe .bt_bb_column_content,
+    #bt_bb_section69a66da9eac69 .bt_bb_column_content,
+    #bt_bb_section69a66da9ebb6b .bt_bb_column_content {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    #bt_bb_section69a66da9e9ffe .bt_bb_headline,
+    #bt_bb_section69a66da9eac69 .bt_bb_headline,
+    #bt_bb_section69a66da9ebb6b .bt_bb_headline {
+        text-align: left !important;
+    }
+}
+
+/* Hero sections with black background - extend to full width */
+section[style*="background-color:#000000"] {
+    width: 100% !important;
+    background-color: #000000 !important;
+}
+
+.bt_bb_wrapper {
+    width: 100% !important;
+}
+
+/* Ensure no white/grey background behind hero sections */
+.btContent {
+    background-color: transparent !important;
+}
+
+.btContentHolder {
+    background-color: transparent !important;
+}
+
+/* Mobile view - hide white columns on black hero sections */
+@media (max-width: 991px) {
+    .bt_bb_section[style*="background-color:#000000"] .bt_bb_column.col-xxl-7 {
+        display: none !important;
+    }
+    
+    .bt_bb_section[style*="background-color:#000000"] .col-xxl-5 {
+        width: 100% !important;
     }
 }
