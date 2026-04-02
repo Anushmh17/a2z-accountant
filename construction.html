@@ -29,7 +29,61 @@
 <style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
-</style>
+
+        /* [SKELETON PRELOADER] */
+        #bt_preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #191919;
+            z-index: 9999999;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            box-sizing: border-box;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+
+        #bt_preloader.loaded {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .sk-shimmer {
+            background: #2a2a2a;
+            background-image: linear-gradient(90deg, #2a2a2a 0px, #3a3a3a 40px, #2a2a2a 80px);
+            background-size: 600px;
+            animation: sk-shimmer 1.5s infinite linear;
+            border-radius: 6px;
+        }
+
+        @keyframes sk-shimmer {
+            0% { background-position: -150px 0; }
+            100% { background-position: 450px 0; }
+        }
+
+        .sk-header { display: flex; justify-content: space-between; margin-bottom: 60px; }
+        .sk-logo { width: 140px; height: 50px; }
+        .sk-nav { width: 44px; height: 44px; border-radius: 50%; }
+
+        .sk-hero { margin-top: 40px; }
+        .sk-line-lg { width: 280px; height: 55px; margin-bottom: 20px; }
+        .sk-line-md { width: 220px; height: 55px; margin-bottom: 40px; }
+        .sk-line-sm { width: 300px; height: 18px; margin-bottom: 12px; }
+        .sk-line-xs { width: 200px; height: 18px; margin-bottom: 50px; }
+        .sk-btn { width: 180px; height: 55px; border-radius: 30px; }
+
+        @media (min-width: 992px) {
+            #bt_preloader { padding: 60px 10%; }
+            .sk-line-lg { width: 600px; }
+            .sk-line-md { width: 450px; }
+            .sk-line-sm { width: 500px; }
+            .sk-line-xs { width: 400px; }
+        }
+    </style>
 <style id='wp-emoji-styles-inline-css' type='text/css'>
 	img.wp-smiley, img.emoji {
 		display: inline !important;
@@ -172,6 +226,22 @@ gtag("config", "GT-NFRPMPJ");
 	<link rel="stylesheet" href="css/local-fonts.css">
 </head>
 <body class="page wp-theme-avantage btHideHeadline">
+    <!-- Skeleton Preloader -->
+    <div id="bt_preloader">
+        <div class="sk-header">
+            <div class="sk-logo sk-shimmer"></div>
+            <div class="sk-nav sk-shimmer"></div>
+        </div>
+        <div class="sk-hero">
+            <div class="sk-line-lg sk-shimmer"></div>
+            <div class="sk-line-md sk-shimmer"></div>
+            <div class="sk-line-sm sk-shimmer"></div>
+            <div class="sk-line-sm sk-shimmer"></div>
+            <div class="sk-line-xs sk-shimmer"></div>
+            <div class="sk-btn sk-shimmer"></div>
+        </div>
+    </div>
+
 <div class="btPageWrap" id="top">
     <div class="btVerticalHeaderTop">
 				<div class="btVerticalMenuTrigger">&nbsp;<div class="bt_bb_icon"><a href="#" target="_self"   data-ico-fa="&#xf0c9;" class="bt_bb_icon_holder"></a></div></div>
@@ -490,6 +560,18 @@ document.tidioChatCode = "skvasrziyjb4nos1b9iynclm067tib9j";
 })();
 </script>
     <script src="js/fix.js"></script>
+
+    <!-- Preloader Script -->
+    <script>
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById('bt_preloader');
+            if (preloader) {
+                setTimeout(function() {
+                    preloader.classList.add('loaded');
+                }, 300);
+            }
+        });
+    </script>
 </body>
 </html>
 <!-- Page cached by LiteSpeed Cache 6.5.2 on 2026-03-03 05:06:54 -->
