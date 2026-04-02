@@ -156,10 +156,26 @@
 
 /* Hero Section - no background image on the section itself */
 #bt_bb_section67d5665b10697,
-#bt_bb_section69a677467aa7a {
+#bt_bb_section69a677467aa7a,
+#bt_bb_section69a677467aa7a .bt_bb_port,
+#bt_bb_section69a677467aa7a .bt_bb_cell,
+#bt_bb_section69a677467aa7a .bt_bb_cell_inner,
+#bt_bb_section69a677467aa7a .bt_bb_content_slider,
+#bt_bb_section69a677467aa7a .slick-list,
+#bt_bb_section69a677467aa7a .slick-track,
+#bt_bb_section69a677467aa7a .bt_bb_content_slider_item {
+    background-color: #000000 !important;
     background-image: none !important;
-    background-color: #222222 !important;
-    min-height: 450px !important;
+}
+
+#bt_bb_section67d5665b10697,
+#bt_bb_section69a677467aa7a {
+    min-height: 600px !important;
+}
+
+/* Ensure consistent slider content height */
+#bt_bb_section69a677467aa7a .bt_bb_content_slider_item {
+    min-height: 600px !important;
 }
 
 /* Mobile Header Gap Fix */

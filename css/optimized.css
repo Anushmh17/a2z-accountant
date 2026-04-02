@@ -676,7 +676,7 @@ body.btBelowMenu .btContentWrap {
 
     /* Remove min-height from inner columns (desktop only) */
     #bt_bb_section69a677467aa7a .bt_bb_column_inner {
-        min-height: 0 !important;
+        min-height: 600px !important;
         padding-bottom: 0 !important;
         margin-bottom: 0 !important;
     }
