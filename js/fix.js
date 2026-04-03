@@ -1,6 +1,21 @@
 /* Optimized fix.js to eliminate forced reflow and layout thrashing */
 jQuery(document).ready(function ($) {
-    console.log('🚀 fix.js is loading (optimized)...');
+    console.log('fix.js is loading (optimized)...');
+
+    function ensureMobileBackButton() {
+        if ($('.btCustomMobileBack').length) return;
+        $('body').append('<button type="button" class="btCustomMobileBack" aria-label="Close menu"><span></span></button>');
+    }
+
+    function openMobileMenu() {
+        $('body').addClass('btMenuVerticalOn btShowMenu btMobileMenuOpen');
+        $('.btBelowLogoArea').addClass('btMobileMenuOpen');
+    }
+
+    function closeMobileMenu() {
+        $('body').removeClass('btMenuVerticalOn btShowMenu btMobileMenuOpen');
+        $('.btBelowLogoArea').removeClass('btMobileMenuOpen');
+    }
 
     // Hide header and footer if loaded inside an iframe (like on article.html)
     if (window.self !== window.top) {
@@ -21,7 +36,7 @@ jQuery(document).ready(function ($) {
     // 2. MOBILE GAP FIX (Unified)
     function applyMobileFixes() {
         if ($(window).width() > 991) return;
-        requestAnimationFrame(function() {
+        requestAnimationFrame(function () {
             // Neutralize layout shifts
             $('.btContentWrap, .btContentHolder, .btContent, .btPageWrap').css({
                 'transform': 'none',
@@ -34,14 +49,19 @@ jQuery(document).ready(function ($) {
                 'padding-top': '0'
             });
             fixMobileMenu();
+            ensureMobileBackButton();
         });
     }
 
     // Initial Trigger
     applyMobileFixes();
+    ensureMobileBackButton();
 
     // Trigger on full load (ensures images are calculated)
-    $(window).on('load', applyMobileFixes);
+    $(window).on('load', function () {
+        applyMobileFixes();
+        ensureMobileBackButton();
+    });
 
     // Trigger on resize
     $(window).on('resize', function () {
@@ -49,10 +69,38 @@ jQuery(document).ready(function ($) {
     });
 
     // Toggle menu
-    $(document).on('click', '.customMenuTrigger', function(e) {
+    $(document).on('click', '.customMenuTrigger', function (e) {
         e.preventDefault();
-        $('body').toggleClass('btMenuVerticalOn btShowMenu btMobileMenuOpen');
-        $('.btBelowLogoArea').toggleClass('btMobileMenuOpen');
+        if ($('body').hasClass('btMobileMenuOpen')) {
+            closeMobileMenu();
+        } else {
+            openMobileMenu();
+        }
+    });
+
+    // Mobile back button to close the opened menu
+    $(document).on('click', '.btCustomMobileBack', function (e) {
+        if ($(window).width() > 991) return;
+
+        e.preventDefault();
+        closeMobileMenu();
+    });
+
+    // Mobile: allow tapping parent links to toggle sub-menus without closing
+    $(document).on('click', '.btBelowLogoArea .menu-item-has-children > a', function (e) {
+        if ($(window).width() > 991 || !$('body').hasClass('btMobileMenuOpen')) return;
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        var parentItem = $(this).parent();
+        var subMenu = parentItem.children('.sub-menu').first();
+
+        // Close siblings for a cleaner accordion feel
+        parentItem.siblings('.menu-item-has-children').removeClass('on').children('.sub-menu').stop(true, true).slideUp(200);
+
+        parentItem.toggleClass('on');
+        subMenu.stop(true, true).slideToggle(200);
     });
 
     // Component Initializers
