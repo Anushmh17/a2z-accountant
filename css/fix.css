@@ -917,6 +917,144 @@ li.on>.subToggler:after {
         margin-bottom: 55px !important;
     }
 
+    /* About page mobile: remove decorative floating circles */
+    #bt_bb_section69a50e9656a7d .bt_bb_floating_element,
+    #bt_bb_section69a50e96578b9 .bt_bb_floating_element,
+    #bt_bb_section69a50e96580c3 .bt_bb_floating_element {
+        display: none !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f .bt_bb_floating_element {
+        display: none !important;
+    }
+
+    #bt_bb_section69a66ae0344fc {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66ae0344fc > .bt_bb_port {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66ae034f6c {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66ae034f6c > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66ae034f6c .bt_bb_row:first-child {
+        display: none !important;
+    }
+
+    #bt_bb_section69a66b5f6a575 {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66b5f6a575 > .bt_bb_port {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66b5f6b0f6 {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66b5f6b0f6 > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66b5f6b0f6 .bt_bb_row:first-child {
+        display: none !important;
+    }
+
+    #bt_bb_section69a66bff0b2f3 {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0b2f3 > .bt_bb_port {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0b2f3 .bt_bb_section_bottom_section_coverage_image {
+        line-height: 0 !important;
+        margin-bottom: -1px !important;
+    }
+
+    #bt_bb_section69a66bff0b2f3 .bt_bb_section_bottom_section_coverage_image img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 {
+        padding-top: 0 !important;
+        margin-top: 30px !important;
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 > .bt_bb_port > .bt_bb_cell,
+    #bt_bb_section69a66bff0bbe0 > .bt_bb_port > .bt_bb_cell > .bt_bb_cell_inner {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 .bt_bb_row:first-child {
+        display: none !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 .bt_bb_separator.bt_bb_bottom_spacing_medium {
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 .bt_bb_row:nth-child(2) {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 .bt_bb_row:nth-child(2) > .bt_bb_row_holder {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bff0bbe0 .bt_bb_row:nth-child(2) > .bt_bb_row_holder > .bt_bb_column {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    #bt_bb_section69a66c2934050 {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66c2934050 > .bt_bb_port {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66c2934ae2 {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66c2934ae2 > .bt_bb_port {
+        padding-top: 12px !important;
+    }
+
+    #bt_bb_section69a66c2934ae2 .bt_bb_row:first-child {
+        display: none !important;
+    }
+
+    #bt_bb_section69a66c2934ae2 .bt_bb_separator.bt_bb_bottom_spacing_medium {
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     /* ── Index: reduce gap below headline before paragraph ── */
     #bt_bb_section69a677467ceb3 .bt_bb_headline {
         margin-bottom: 1em !important;
@@ -928,6 +1066,10 @@ li.on>.subToggler:after {
 
     #bt_bb_section69a677467ceb3 .bt_bb_text {
         margin-bottom: 55px !important;
+    }
+
+    #bt_bb_section69a677467ceb3 .bt_bb_floating_element_horizontal_position_right.bt_bb_floating_element_vertical_position_top {
+        display: none !important;
     }
 
     /* ── Border between services and decade section ────────── */
@@ -1185,23 +1327,70 @@ li.on>.subToggler:after {
 /* Prevents "MANAGEMENT ACCOUNTS" from overflowing right edge */
 /* Targets ONLY the Management Accounts page hero section     */
 @media (max-width: 991px) {
+    #bt_bb_section69a66ba666587 {
+        padding-top: 80px !important;
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66ba666587 > .bt_bb_port {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66ba666587 .bt_bb_headline {
+        text-align: center !important;
+        margin-top: -20px !important;
+    }
+
+    #bt_bb_section69a66ba666587 .bt_bb_headline .bt_bb_headline_tag,
+    #bt_bb_section69a66ba666587 .bt_bb_headline .bt_bb_headline_content,
+    #bt_bb_section69a66ba666587 .bt_bb_headline .bt_bb_headline_content span {
+        text-align: center !important;
+    }
+
     #bt_bb_section69a66ba666587 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
-        font-size: 2.4rem !important;
-        line-height: 1.15 !important;
+        font-size: 2.2rem !important;
+        line-height: 1.1 !important;
+    }
+
+    #bt_bb_section69a66ba6670ba {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66ba6670ba > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66ba6670ba .bt_bb_separator.bt_bb_bottom_spacing_medium {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        height: 0 !important;
+    }
+
+    #bt_bb_section69a66ba6670ba .bt_bb_headline {
+        text-align: center !important;
+    }
+
+    #bt_bb_section69a66ba6670ba .bt_bb_headline_subheadline {
+        display: block !important;
+        max-width: 26rem !important;
+        margin: 0 auto 1rem auto !important;
+        text-align: center !important;
+        line-height: 1.5 !important;
+        color: #4a4a4a !important;
     }
 }
 
 @media (max-width: 480px) {
     #bt_bb_section69a66ba666587 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
-        font-size: 1.9rem !important;
-        line-height: 1.15 !important;
+        font-size: 1.8rem !important;
+        line-height: 1.1 !important;
     }
 }
 
 @media (max-width: 360px) {
     #bt_bb_section69a66ba666587 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
-        font-size: 1.6rem !important;
-        line-height: 1.15 !important;
+        font-size: 1.55rem !important;
+        line-height: 1.1 !important;
     }
 }
 
@@ -1212,24 +1401,189 @@ li.on>.subToggler:after {
 
     /* Match Tax Services/Personal Tax/Annual Accounts spacing */
     #bt_bb_section69a66bd983112 {
-        padding-top: 80px !important;
-        padding-bottom: 20px !important;
+        padding-top: 50px !important;
+        padding-bottom: 0 !important;
+        min-height: auto !important;
+    }
+
+    #bt_bb_section69a66bd983112 > .bt_bb_port {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_column.bt_bb_padding_double {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_separator.bt_bb_top_spacing_medium,
+    #bt_bb_section69a66bd983112 .bt_bb_separator.bt_bb_bottom_spacing_large {
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     #bt_bb_section69a66bd983112 .bt_bb_headline {
         text-align: center !important;
-        margin-top: -30px !important;
+        margin-top: 0 !important;
         /* Match global subpage pull-up */
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
+        font-size: 2.3rem !important;
+        line-height: 1 !important;
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_headline .bt_bb_headline_content > span > br:last-child {
+        display: none !important;
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_section_bottom_section_coverage_image {
+        line-height: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983112 .bt_bb_section_bottom_section_coverage_image img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
     }
 
     #bt_bb_section69a66bd983112 .bt_bb_headline .bt_bb_headline_tag {
         text-align: center !important;
     }
 
-    /* Standard responsive font sizes used on reference pages */
-    #bt_bb_section69a66bd983112 .bt_bb_headline.bt_bb_size_huge .bt_bb_headline_tag {
-        font-size: 3.2rem !important;
-        line-height: 1.1 !important;
+    #bt_bb_section69a66bd983abd {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_headline {
+        text-align: center !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_headline_subheadline {
+        display: block !important;
+        max-width: 26rem !important;
+        margin: 0 auto 1rem auto !important;
+        text-align: center !important;
+        line-height: 1.5 !important;
+        color: #4a4a4a !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_separator.bt_bb_bottom_spacing_medium {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        height: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column:nth-child(2) {
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column:nth-child(3) {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column:nth-child(2) .bt_bb_separator.bt_bb_bottom_spacing_normal,
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column:nth-child(3) .bt_bb_separator.bt_bb_bottom_spacing_normal {
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column:nth-child(2) ul {
+        margin-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66bd983abd .bt_bb_row > .bt_bb_row_holder > .bt_bb_column:nth-child(3) ul:first-child {
+        margin-top: 0 !important;
+    }
+}
+
+/* Personal Tax: add a touch more space between hero and first paragraph section */
+#bt_bb_section69a66c2934ae2 {
+    padding-top: 16px !important;
+}
+
+/* Tax Services: bring the first content block a little closer to the hero */
+#bt_bb_section69a66c4f40b37 {
+    padding-top: 8px !important;
+}
+
+#bt_bb_section69a66c4f40b37 > .bt_bb_port {
+    padding-top: 1.25em !important;
+}
+
+@media (max-width: 991px) {
+    #bt_bb_section69a66c4f40277 .bt_bb_column {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a66c4f40b37 {
+        margin-top: 4px !important;
+        position: relative !important;
+        z-index: 3 !important;
+    }
+
+    #bt_bb_section69a66c4f40b37 > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a66c4f40b37 .bt_bb_headline,
+    #bt_bb_section69a66c4f40b37 .bt_bb_headline_subheadline,
+    #bt_bb_section69a66c4f40b37 .bt_bb_headline_tag {
+        text-align: center !important;
+    }
+
+    #bt_bb_section69a66c4f40b37 .bt_bb_separator.bt_bb_bottom_spacing_medium {
+        margin-bottom: 1.25em !important;
+        height: 0 !important;
+    }
+
+    #bt_bb_section69a7a8062f1c0 .bt_bb_column {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f {
+        margin-top: 4px !important;
+        position: relative !important;
+        z-index: 3 !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f > .bt_bb_port {
+        padding-top: 0 !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f .bt_bb_headline,
+    #bt_bb_section69a7a8062fd1f .bt_bb_headline_subheadline,
+    #bt_bb_section69a7a8062fd1f .bt_bb_headline_tag {
+        text-align: center !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f .bt_bb_separator.bt_bb_bottom_spacing_medium {
+        margin-bottom: 1.25em !important;
+        height: 0 !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f ul {
+        margin-top: 0 !important;
+        margin-bottom: 0.2em !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #bt_bb_section69a7a8062fd1f li {
+        margin-bottom: 0.05em !important;
+        line-height: 1.25 !important;
     }
 }
 
