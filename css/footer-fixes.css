@@ -1,0 +1,59 @@
+/* Mobile & Desktop Footer Toggle */
+
+/* Desktop - Show desktop footer, hide mobile footer */
+@media (min-width: 768px) {
+    .btSiteFooterMobile {
+        display: none !important;
+    }
+
+    .btSiteFooterDesktop {
+        display: block !important;
+    }
+
+    .btSiteFooter .bt_bb_row .bt_bb_column {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .btSiteFooter .bt_bb_column_content {
+        min-height: 300px;
+    }
+}
+
+/* Mobile - Show mobile footer, hide desktop footer */
+@media (max-width: 767px) {
+    .btSiteFooterMobile {
+        display: block !important;
+    }
+
+    .btSiteFooterDesktop {
+        display: none !important;
+    }
+}
+
+/* General footer styling */
+.btSiteFooter {
+    background-color: #000000 !important;
+}
+
+.btSiteFooter .bt_bb_text ul li a {
+    transition: all 0.3s ease;
+}
+
+.btSiteFooter .bt_bb_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.btSiteFooter .bt_bb_column_content {
+    flex: 1;
+}
+
+/* Default state */
+.btSiteFooterMobile {
+    display: none;
+}
+
+.btSiteFooterDesktop {
+    display: block;
+}

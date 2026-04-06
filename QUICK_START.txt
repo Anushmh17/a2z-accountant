@@ -1,0 +1,188 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                    A2Z FOOTER UPDATE - QUICK START                        ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+STEP 1: NAVIGATE TO THE DIRECTORY
+═════════════════════════════════════════════════════════════════════════════
+
+Open Command Prompt (cmd.exe) or PowerShell and navigate to:
+    cd "C:\xampp\htdocs\Webbuilders Projects\A2Z\A2Z"
+
+
+STEP 2: RUN THE UPDATE SCRIPT
+═════════════════════════════════════════════════════════════════════════════
+
+Run ONE of these commands:
+
+  ► PYTHON (RECOMMENDED):
+    python apply_footer_regex.py
+
+  ► NODE.JS (alternative):
+    node update_footer.js
+
+  ► BATCH FILE (alternative):
+    update_footer.bat
+
+
+STEP 3: WAIT FOR COMPLETION
+═════════════════════════════════════════════════════════════════════════════
+
+The script will:
+  ✅ Update 19 HTML files
+  ✅ Verify each update
+  ✅ Show progress in the console
+  ✅ Report success/failure
+
+
+STEP 4: VERIFY THE RESULTS
+═════════════════════════════════════════════════════════════════════════════
+
+The script will automatically verify 3 random files and display:
+
+  ✅ 6-column layout
+  ✅ About Us section
+  ✅ Quick Links section
+  ✅ Services section
+  ✅ Sectors section
+  ✅ Mobile navigation menu
+
+═════════════════════════════════════════════════════════════════════════════
+
+FILES TO BE UPDATED (19 total):
+═════════════════════════════════════════════════════════════════════════════
+
+Main Pages:
+  ✓ about.html
+  ✓ contact.html
+  ✓ article.html
+  ✓ blog.html
+  ✓ getquote.html
+
+Accounting Services:
+  ✓ annual-accounts.html
+  ✓ business-consultancy.html
+  ✓ book-keeping.html
+  ✓ management-accounts.html
+  ✓ online-accounting.html
+  ✓ payroll-services.html
+  ✓ personal-tax.html
+  ✓ tax-services.html
+
+Industry Sectors:
+  ✓ construction.html
+  ✓ clinics-surgeries.html
+  ✓ care-homes.html
+  ✓ hospitality-leisure.html
+  ✓ Landlords.html
+  ✓ Manufacturing.html
+  ✓ retails.html
+
+═════════════════════════════════════════════════════════════════════════════
+
+EXPECTED OUTPUT:
+═════════════════════════════════════════════════════════════════════════════
+
+✅ about.html
+✅ contact.html
+✅ article.html
+✅ blog.html
+✅ getquote.html
+✅ annual-accounts.html
+✅ business-consultancy.html
+✅ book-keeping.html
+✅ management-accounts.html
+✅ online-accounting.html
+✅ payroll-services.html
+✅ personal-tax.html
+✅ tax-services.html
+✅ construction.html
+✅ clinics-surgeries.html
+✅ care-homes.html
+✅ hospitality-leisure.html
+✅ Landlords.html
+✅ Manufacturing.html
+✅ retails.html
+
+==================================================
+SUCCESS: 19/19
+
+Verifying 3 sample files...
+
+about.html:
+  ✅ 6-column layout
+  ✅ About Us
+  ✅ Quick Links
+  ✅ Services
+  ✅ Sectors
+  ✅ Mobile menu
+
+contact.html:
+  ✅ 6-column layout
+  ✅ About Us
+  ✅ Quick Links
+  ✅ Services
+  ✅ Sectors
+  ✅ Mobile menu
+
+article.html:
+  ✅ 6-column layout
+  ✅ About Us
+  ✅ Quick Links
+  ✅ Services
+  ✅ Sectors
+  ✅ Mobile menu
+
+═════════════════════════════════════════════════════════════════════════════
+
+WHAT'S NEW IN THE FOOTER:
+═════════════════════════════════════════════════════════════════════════════
+
+ADDED:
+  • Quick Links column (Main Pages) - Navigation to key pages
+  • Services column (What We Offer) - Replaces the location map
+  • Sectors column (Industries We Serve) - List of industry verticals
+  • Mobile Navigation Menu - Better mobile experience
+
+IMPROVED:
+  • 6-column responsive layout (was 4-column)
+  • Better mobile view with dedicated navigation
+  • Consistent responsive classes (col-md-6, col-sm-12, col-xs-12)
+  • Proper spacing with bt_bb_top_spacing_normal
+
+PRESERVED:
+  • About Us section with company description & social icons
+  • Ilford Office contact information
+  • Middlesex Office contact information
+  • Section IDs: bt_bb_section69a67746888a9 & bt_bb_section69a677468936d
+  • Black background for main footer, gold for copyright
+
+═════════════════════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING:
+═════════════════════════════════════════════════════════════════════════════
+
+Q: Python is not recognized
+A: Make sure Python is installed and in your PATH
+   - Check: python --version
+   - Or use full path: C:\Python39\python apply_footer_regex.py
+
+Q: Node.js is not recognized  
+A: Make sure Node.js is installed
+   - Check: node --version
+   - Install from: https://nodejs.org/
+
+Q: "Permission denied" error
+A: Run Command Prompt as Administrator
+   - Right-click cmd.exe → Run as Administrator
+
+Q: Script says "Footer not found"
+A: Make sure index.html exists in the directory
+   - Check: dir index.html
+
+═════════════════════════════════════════════════════════════════════════════
+
+For more detailed information, see: FOOTER_UPDATE_GUIDE.txt
+
+═════════════════════════════════════════════════════════════════════════════

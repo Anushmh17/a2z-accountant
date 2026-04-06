@@ -1993,3 +1993,27 @@ section[style*="background-color:#000000"] {
         width: 100% !important;
     }
 }
+
+/* Homepage testimonials: reduce top gap on mobile */
+@media (max-width: 991px) {
+    #bt_bb_section69a6774680f2f > .bt_bb_port {
+        padding-top: 0.9em !important;
+    }
+
+    #bt_bb_section69a6774680f2f .bt_bb_column_content > .bt_bb_separator.bt_bb_bottom_spacing_medium:first-child {
+        margin-bottom: 0.4em !important;
+    }
+}
+
+/* Homepage First Class Consultants: tighten mobile spacing */
+@media (max-width: 991px) {
+    #bt_bb_section69a67746836d3 .bt_bb_column_content > .bt_bb_separator.bt_bb_top_spacing_medium.bt_bb_bottom_spacing_normal.bt_bb_hidden_md.bt_bb_hidden_lg {
+        margin-top: 1.5em !important;
+        margin-bottom: 0.75em !important;
+    }
+
+    #bt_bb_section69a67746836d3 .bt_bb_column_content > .bt_bb_separator.bt_bb_top_spacing_medium.bt_bb_bottom_spacing_normal:last-child {
+        margin-top: 1em !important;
+        margin-bottom: 0.5em !important;
+    }
+}
